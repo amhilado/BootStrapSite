@@ -1,0 +1,16 @@
+h1 {
+    padding-top: 5%;
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    line-height: 30px;
+    padding-left: 5%;
+    align-content: center;
+}
+
+.col-md-8 {
+    color: white;
+}
