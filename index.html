@@ -7,7 +7,7 @@
     <title>Aaron Hilado</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
@@ -17,19 +17,31 @@
 </head>
 
 <body>
-    <nav id="nav" class="navbar fixed-top navbar-toggleable-sm navbar-dark" data-spy="affix">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">
-                <img src="images/Logo.png" height="30%" width="30%" class="img-fluid" alt="Responsive image">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.png" height="90%" width="90%">
             </a>
-            <ul class="nav navbar-nav">
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Work
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.ahilado.com">Photography</a>
+                            <a class="dropdown-item" href="design.html">Design</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -38,16 +50,20 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="images/VW.jpg" alt="First slide">
+                <img class="d-block w-100" src="images/BayBridge.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="images/BayBridge.jpg" alt="Second slide">
+                <img class="d-block w-100" src="images/VW.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="images/SI.jpg" alt="Third slide">
+                <img class="d-block w-100" src="images/Clouds.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/Seattle.jpg" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -60,14 +76,28 @@
         </a>
     </div>
 
-    <div class="container-fluid" style="background: black">
+    <div class="container-fluid" style="background: black; padding-top: 10%; padding-bottom: 10%;">
         <div class="row justify-content-center">
-            <div class="col-md-8">
-                <h1>Aaron Hilado</h1>
-                <ul>
-                    <li><i class="fas fa-camera"></i><br>Photography</li>
-                    <li><i class="fas fa-pencil-alt"></i><br>Design</li>
-                </ul>
+            <div class="col-md-7">
+                <h1>Experimenting With Creativity</h1>
+                <div class="container">
+                    <div class="row justify-content-center" style="padding: 5% 0 5% 0">
+                        <div class="col-md-4" style="text-align: center;">
+                            <i class="fas fa-camera" style="padding-bottom: 2%;"></i>
+                            <br>
+                            <h4>Photo</h4>
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <i class="fas fa-pencil-alt" style="padding-bottom: 2%;"></i>
+                            <br>
+                            <h4>Design</h4>
+                        </div>
+                    </div>
+                </div>
+                <h5>Exploring different fields of content creation, with a focus on photography and design, Aaron Hilado aims
+                    to create unique content and revolutionize creative thinking by devising innovative methods and reinventing
+                    old methods that will bring forward new ways to create.
+                </h5>
             </div>
         </div>
     </div>
