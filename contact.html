@@ -28,37 +28,92 @@
     </div>
 
     <div class="container" style="padding-top: 2%;">
-        <form>
+        <form class="needs-validation" novalidate>
             <div class="form-row justify-content-center">
                 <div class="form-group col-md-4">
                     <label for="inputFirstName">First Name</label>
-                    <input type="email" class="form-control" id="inputFirstName" placeholder="First Name">
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="invalid-feedback">
+                        Please enter your first name
+                    </div>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputLastName">Last Name</label>
-                    <input type="password" class="form-control" id="inputLastName" placeholder="Last Name">
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                        Please enter your last name
+                    </div>
                 </div>
             </div>
             <div class="form-row justify-content-center">
                 <div class="form-group col-md-8">
                     <label for="inputEmail">Email</label>
-                    <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email
+                    </div>
                 </div>
                 <div class="form-group col-md-8">
                     <label for="inputSubject">Subject</label>
-                    <input type="text" class="form-control" id="inputSubjet" placeholder="Subject">
+                    <input type="text" class="form-control" id="validationCustom04" required>
+                    <div class="invalid-feedback">
+                        Please include a Subject
+                    </div>
                 </div>
             </div>
             <div class="form-row justify-content-center">
                 <div class="form-group col-md-8">
                     <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <textarea type="text" class="form-control" id="validationCustom05" rows="5" required></textarea>
+                    <div class="invalid-feedback">
+                        Please include a message
+                    </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
+
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="color: black;">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Message was not sent</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" style="color: black;">
+                                <p>Please fix the fields with errors</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </form>
+
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
