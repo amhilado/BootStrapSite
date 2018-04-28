@@ -86,35 +86,53 @@
         </div>
     </div>
 
-    <hr/>
+    <br>
 
     <div class="container" style="border-top: 1px solid #fff;">
-        <div class="row" style="padding: 3% 0%">
-            <div class="col-lg-6">
-                <h2> Education </h2>
-                <br>
-                <div class="info">
-                    <h3> University of California, Irvine Division of Continuing Education</h3>
-                    <p> Certification, UX/UI Design </p>
+        <div id="accordion" style="padding: 6%">
+            <div class="card text-white bg-dark">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Education
+                        </button>
+                    </h5>
+                </div>
 
-                    <br>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div>
+                            <h3> University of California, Irvine Division of Continuing Education</h3>
+                            <p> Certification, UX/UI Design </p>
 
-                    <h3> University of California, Irvine </h3>
-                    <p>B.A., Art
-                        <br> Minor: Digital Arts
-                        <br> Dean's Honor List (GPA is 3.5 or above): Fall 2015 - Spring 2017 </p>
+                            <br>
+
+                            <h3> University of California, Irvine </h3>
+                            <p>B.A., Art
+                                <br> Minor: Digital Arts
+                                <br> Dean's Honor List (GPA is 3.5 or above): Fall 2015 - Spring 2017 </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-lg-6">
-                <h2> Skills </h2>
-                <br>
-                <div>
-                    <h4>HTML 5</h4>
-                    <h4>CSS 3</h4>
-                    <h4>Sketch</h4>
-                    <h4>Adobe Photoshop</h4>
-                    <h4>Adobe Illustrator</h4>
+            <div class="card text-white bg-dark">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Skills
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <div>
+                            <h4>HTML 5</h4>
+                            <h4>CSS 3</h4>
+                            <h4>Sketch</h4>
+                            <h4>Adobe Photoshop</h4>
+                            <h4>Adobe Illustrator</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
