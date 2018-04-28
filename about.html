@@ -1,91 +1,131 @@
 <!DOCTYPE html>
-
 <html lang="en-us">
 
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aaron Hilado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="UTF-8">
-    <title> Aaron Hilado </title>
-    <link href="about.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="about.css" />
+
 
 </head>
 
 <body>
 
-    <section class="header">
-        <a href="index.html">
-            <img class="logo" src="images/Logo.png">
-        </a>
-    </section>
-
-    <section class="content">
-        <img class="profile" src="images/Profile.png">
-
-        <div class="opening">
-            <h1> Aaron Hilado </h1>
-
-            <p>UX/UI Designer with a Bachelor’s Degree in Art and a Minor in Digital Arts. Currently enrolled in a UX/UI Bootcamp
-                at UCI Continued Education. Proficient with Sketch, Adobe Illustrator, and Adobe Photoshop. Works well as
-                an individual, as well as in teams maintaining strong communication, and able to take a lead position if
-                necessary. Able to define and understand user and business needs to create an experience that revolves around
-                said needs in order to improve user experience and business sales.
-            </p>
-
-            <br>
-            <br>
-
-            <h3>Contact</h3>
-            <br>
-            <p>Email: aaronh1194@gmail.com</p>
-            <p>Phone: (626)-977-0822</p>
-
-            <ul>
-                <li>
-                    <a href="https://ahilado.tumblr.com" class="tumblr"></a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/ahilado" class="instagram"></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/aaron-hilado/" class="linkedin"></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <hr>
-
-    <section class="bio">
-        <div class="edu">
-            <h2> Education </h2>
-            <br>
-            <div class="info">
-                <h3> University of California, Irvine Division of Continuing Education</h3>
-                <p> Certification, UX/UI Design </p>
-
-                <br>
-                <br>
-                <br>
-
-                <h3> University of California, Irvine </h3>
-                <p>B.A., Art
-                    <br> Minor: Digital Arts
-                    <br> Dean's Honor List (GPA is 3.5 or above): Fall 2015 - Spring 2017 </p>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.png" height="90%" width="90%">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Work
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.ahilado.com">Photography</a>
+                            <a class="dropdown-item" href="design.html">Design</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="skills">
-            <h2> Skills </h2>
-            <br>
-            <div>
-                <h4>HTML 5</h4>
-                <h4>CSS 3</h4>
-                <h4>Sketch</h4>
-                <h4>Adobe Photoshop</h4>
-                <h4>Adobe Illustrator</h4>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6" style="padding: 2%">
+                <img class="d-block w-100" src="images/Profile.png">
+            </div>
+            <div class="col-lg-6" style="padding: 2%">
+                <h1> Aaron Hilado </h1>
+
+                <p>UX/UI Designer with a Bachelor’s Degree in Art and a Minor in Digital Arts. Currently enrolled in a UX/UI
+                    Bootcamp at UCI Continued Education. Proficient with Sketch, Adobe Illustrator, and Adobe Photoshop.
+                    Works well as an individual, as well as in teams maintaining strong communication, and able to take a
+                    lead position if necessary. Able to define and understand user and business needs to create an experience
+                    that revolves around said needs in order to improve user experience and business sales.
+                </p>
+
+                <br>
+
+                <h3>Contact</h3>
+                <p>Email: aaronh1194@gmail.com</p>
+                <p>Phone: (626)-977-0822</p>
+
+                <ul style="padding: 0; list-style: none;">
+                    <li style="float: left; padding-right: 4%">
+                        <a href="https://ahilado.tumblr.com" class="tumblr"></a>
+                    </li>
+                    <li style="float: left; padding-right: 4%">
+                        <a href="https://instagram.com/ahilado" class="instagram"></a>
+                    </li>
+                    <li style="float: left">
+                        <a href="https://www.linkedin.com/in/aaron-hilado/" class="linkedin"></a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+
+    <hr/>
+
+    <div class="container" style="border-top: 1px solid #fff;">
+        <div class="row" style="padding: 3% 0%">
+            <div class="col-lg-6">
+                <h2> Education </h2>
+                <br>
+                <div class="info">
+                    <h3> University of California, Irvine Division of Continuing Education</h3>
+                    <p> Certification, UX/UI Design </p>
+
+                    <br>
+
+                    <h3> University of California, Irvine </h3>
+                    <p>B.A., Art
+                        <br> Minor: Digital Arts
+                        <br> Dean's Honor List (GPA is 3.5 or above): Fall 2015 - Spring 2017 </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h2> Skills </h2>
+                <br>
+                <div>
+                    <h4>HTML 5</h4>
+                    <h4>CSS 3</h4>
+                    <h4>Sketch</h4>
+                    <h4>Adobe Photoshop</h4>
+                    <h4>Adobe Illustrator</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 </body>
 

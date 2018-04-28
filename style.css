@@ -20,6 +20,7 @@ i {
     background: rgba(0, 0, 0, 0.3);
     font-size: 20px;
     font-weight: bolder;
+    /*mix-blend-mode: difference;*/
 }
 
 .col-md-7 {
