@@ -35,6 +35,46 @@ h5 {
     color: white;
 }
 
+.linkedin {
+    opacity: 1.0;
+    transition: background .2s ease-in-out;
+    height: 50px;
+    width: 50px;
+    display: block;
+    background: url('images/LinkedIn.png');
+    background-size: 50px;
+}
+
+.linkedin:hover {
+    opacity: 1.0;
+    transition: background .5s ease-in-out;
+    height: 50px;
+    width: 50px;
+    display: block;
+    background: url('images/LinkedInHover.png');
+    background-size: 50px;
+}
+
+.behance {
+    opacity: 1.0;
+    transition: background .2s ease-in-out;
+    height: 50px;
+    width: 50px;
+    display: block;
+    background: url('images/Behance.png');
+    background-size: 50px;
+}
+
+.behance:hover {
+    opacity: 1.0;
+    transition: background .5s ease-in-out;
+    height: 50px;
+    width: 50px;
+    display: block;
+    background: url('images/BehanceHover.png');
+    background-size: 50px;
+}
+
 .tumblr {
     opacity: 1.0;
     transition: background .2s ease-in-out;
@@ -72,25 +112,5 @@ h5 {
     width: 50px;
     display: block;
     background: url('images/InstagramHover.png');
-    background-size: 50px;
-}
-
-.linkedin {
-    opacity: 1.0;
-    transition: background .2s ease-in-out;
-    height: 50px;
-    width: 50px;
-    display: block;
-    background: url('images/LinkedIn.png');
-    background-size: 50px;
-}
-
-.linkedin:hover {
-    opacity: 1.0;
-    transition: background .5s ease-in-out;
-    height: 50px;
-    width: 50px;
-    display: block;
-    background: url('images/LinkedInHover.png');
     background-size: 50px;
 }
